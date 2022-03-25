@@ -2,7 +2,7 @@
   "name": "plan",
   "version": "0.1.0",
   "private": true,
-  "homepage": "http://mujeebayokunle.github.io/jokes",
+  "homepage": "https://mujeebayokunle.github.io/jokes",
   "dependencies": {
     "@react-navigation/native": "^6.0.8",
     "@react-navigation/native-stack": "^6.5.0",
