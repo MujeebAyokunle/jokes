@@ -29,6 +29,7 @@ const Homescreen = () => {
         })
     }, [pagenumber,])
 
+    // load more jokes
     const viewMore = () => {
         let page = pagenumber + 1
         setPagenumber(page)
@@ -39,6 +40,7 @@ const Homescreen = () => {
         })
     }
 
+    // search joke
     const searchText = (text) => {
         setSingleJoke(false)
         ApiCall("http://localhost:2000/joke/search", "POST", { pagenumber: searchPagenumber, searchtext: `%${text}%` }, async (data) => {
@@ -47,12 +49,14 @@ const Homescreen = () => {
         })
     }
 
+    // See more details about a single joke
     const seeMore = (data, id) => {
         setJoke(data)
         setSingleJoke(true)
         setJokeindex(id)
     }
 
+    // Like a joke
     const like = () => {
         ApiCall("http://localhost:2000/alterlike", "POST", { pagenumber: pagenumber, id: joke.id, task: 'like' }, async (data) => {
             let apiresponse = await data
@@ -62,6 +66,7 @@ const Homescreen = () => {
         })
     }
 
+    // dislike a joke
     const dislike = () => {
         ApiCall("http://localhost:2000/alterlike", "POST", { pagenumber: pagenumber, id: joke.id, task: 'dislike' }, async (data) => {
             let apiresponse = await data
@@ -70,6 +75,7 @@ const Homescreen = () => {
         })
     }
 
+    // load next joke
     const next = () => {
         let nextIndex = jokeindex + 1
         let max = jokes.length - 1
@@ -82,6 +88,7 @@ const Homescreen = () => {
         setJoke(jokes[nextIndex])
     }
 
+    // load previous joke
     const prev = () => {
         let prevIndex = jokeindex - 1
 
@@ -92,6 +99,7 @@ const Homescreen = () => {
         setJoke(jokes[prevIndex])
     }
 
+    // load jokes categorie
     const categorize = (category, color) => {
         setPagenumber(1)
         setReturnedColor(color)
@@ -111,8 +119,10 @@ const Homescreen = () => {
     return (
 
         <div className='body-section' >
-
+            {/* Navigation bar */}
             <Navbar />
+
+
             <div className='nav' >
                 <h1 className='jokebible'>The Joke Bible</h1>
                 <h2 className='jokebibleSubtext'>Daily Laughs for you and yours</h2>
@@ -292,6 +302,7 @@ const Homescreen = () => {
                     </div>
                 )
             }
+            {/* Footer */}
             <Footer />
         </div>
     );
