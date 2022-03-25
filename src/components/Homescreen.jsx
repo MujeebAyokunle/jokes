@@ -1,5 +1,5 @@
 
-import React, { useCallback, useEffect, useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import Categories from './categories';
 import Footer from './footer';
 import './Homescreen.scss'
