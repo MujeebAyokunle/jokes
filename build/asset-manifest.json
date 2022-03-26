@@ -1,0 +1,21 @@
+{
+  "files": {
+    "main.css": "/jokes/static/css/main.00b808dc.css",
+    "main.js": "/jokes/static/js/main.aecb017b.js",
+    "static/js/787.d718609c.chunk.js": "/jokes/static/js/787.d718609c.chunk.js",
+    "static/media/bitmap.png": "/jokes/static/media/bitmap.869b81b7436dee2a6ab5.png",
+    "static/media/bitmap-copy.png": "/jokes/static/media/bitmap-copy.4d07e6fc9d1b1265ab24.png",
+    "static/media/Montserrat-Regular.ttf": "/jokes/static/media/Montserrat-Regular.3cd786652b8a2e9d41f2.ttf",
+    "static/media/Montserrat-Bold.ttf": "/jokes/static/media/Montserrat-Bold.079ca05d3ded9bc107ab.ttf",
+    "static/media/Montserrat-SemiBold.ttf": "/jokes/static/media/Montserrat-SemiBold.fa8441f345d83a0bc4ec.ttf",
+    "static/media/Montserrat-Thin.ttf": "/jokes/static/media/Montserrat-Thin.4a799b111f608dbf4f89.ttf",
+    "index.html": "/jokes/index.html",
+    "main.00b808dc.css.map": "/jokes/static/css/main.00b808dc.css.map",
+    "main.aecb017b.js.map": "/jokes/static/js/main.aecb017b.js.map",
+    "787.d718609c.chunk.js.map": "/jokes/static/js/787.d718609c.chunk.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.00b808dc.css",
+    "static/js/main.aecb017b.js"
+  ]
+}
